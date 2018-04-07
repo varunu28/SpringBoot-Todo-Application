@@ -8,8 +8,8 @@
 	</head>
 	<body>
 		<div class="container">
-			<h3>Add Todo Page for ${name}</h3>
 			<form:form method="post" commandName="todo">
+				<form:hidden path="id"/>
 				<fieldset class="form-group">
 					<form:label path="desc">Description: </form:label>
 					<form:input path="desc" type="text" 
